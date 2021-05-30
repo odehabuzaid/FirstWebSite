@@ -9,10 +9,16 @@ let aNumber
 
  
  function addRepeatedPicture(){
-     input = prompt('Rate this page . 1 to 10')
-         for (let i = 0 ; i < input ; i++){
-        document.write("<h1><img src='res/aStar.png' width='5%' hight='5%'><h1>")
-            }
+     input = prompt('Rate this page . 1 to 10 ?')
+         if (input >= 0 && input <= 10 ){
+            for (let i = 0 ; i < input ; i++){
+                document.write("<img src='res/aStar.png' width='5%' hight='5%'>")
+                    }
+
+       document.write('<h1>' + input + ' Out of 10</h1>')
+     
+         }else {addRepeatedPicture()}
+
  }
 
 

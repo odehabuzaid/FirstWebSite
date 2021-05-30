@@ -6,13 +6,9 @@ body
     background-color: rgb(240, 219, 79) ;
       background-size: 100%;
 }
-.overlay {
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    overflow: auto;
-    top: 0px;
-    left: 0px;
-    background: rgba(230, 229, 227, 0.418);
+
+h1{
+    font-family: monospace ;
+    font-size: large;
+    font-style: italic;
 }

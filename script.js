@@ -8,11 +8,11 @@ let input
 addRepeatedPicture(prompt('Rate this page . 1 to 5 ?'))
  function addRepeatedPicture(_input){
      
-    if (_input >= 0 && _input <= 5 & _input != 'undefind' ){
+    if (_input >= 1 && _input <= 5 && _input != 'undefind' ){
        for (let i = 0 ; i < _input ; i++){
         Stars.innerHTML = Stars.innerHTML + `<img src='res/aStar.png' width='5%' hight='5%'>`}
             Stars.innerHTML = Stars.innerHTML + `<br><h2> ${_input}` + ' out of 5</h2>'}
-    else {addRepeatedPicture()}
+    else {addRepeatedPicture(prompt('Rate this page . 1 to 5 ?'))}
 
 }
 

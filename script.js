@@ -1,20 +1,18 @@
-// let input 
-// let aNumber 
-//     do{
-//         alert('To Enter this page , you must answer a question.')
-//         input = prompt(`What year did javascript start ?   '1996'`)}
-//         while ( input != '1996'  )
+let Stars = document.getElementById('rating-div')
+let input
+    do{
+        alert('To Enter this page , you must answer a question.')
+          input = prompt(`What year did javascript start ?   '1996'`)}
+        while ( input != '1996'  )
+ 
+addRepeatedPicture(prompt('Rate this page . 1 to 5 ?'))
+ function addRepeatedPicture(_input){
+     
+    if (_input >= 0 && _input <= 5 & _input != 'undefind' ){
+       for (let i = 0 ; i < _input ; i++){
+        Stars.innerHTML = Stars.innerHTML + `<img src='res/aStar.png' width='5%' hight='5%'>`}
+            Stars.innerHTML = Stars.innerHTML + `<br><h2> ${_input}` + ' out of 5</h2>'}
+    else {addRepeatedPicture()}
 
-// //  function addRepeatedPicture(){
-// //      input = prompt('Rate this page . 1 to 5 ?')
-// //          if (input >= 0 && input <= 5 ){
-// //             for (let i = 0 ; i < input ; i++){
-// //                 document.write(`<img src='res/aStar.png' width='5%' hight='5%'>`) }
-
-// //        document.write(`<h1>  ${input} out of 5</h1>`)
-// //          }else {addRepeatedPicture()}
-// //  }
-// //  document.addEventListener('ContentLoaded', addRepeatedPicture())
-
-
+}
 

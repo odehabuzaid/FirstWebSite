@@ -12,3 +12,11 @@ h1{
     font-size: large;
     font-style: italic;
 }
+
+p{
+    font-family:sans-serif;
+    font-size: 16pt;
+    color:white;
+    font-style: oblique;
+
+}

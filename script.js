@@ -1,13 +1,18 @@
 let input 
 let aNumber 
 
+
     do{
         alert('To Enter this page , you must answer a question.')
-        input = prompt('What year did javascript start ?')}
-        while ( input != '1995'  )
+        input = prompt("What year did javascript start ?   '1996'")}
+        while ( input != '1996'  )
+
+   
 
 
- 
+
+    document.addEventListener("ContentLoaded", addRepeatedPicture())
+
  function addRepeatedPicture(){
      input = prompt('Rate this page . 1 to 5 ?')
          if (input >= 0 && input <= 5 ){
@@ -16,7 +21,7 @@ let aNumber
                     }
 
        document.write('<h1>' + input + ' Out of 5</h1>')
-     
+
          }else {addRepeatedPicture()}
 
  }
